@@ -1,0 +1,28 @@
+/* style.css */
+#wheel {
+    width: 300px;
+    height: 300px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    position: relative;
+    margin: 20px auto;
+}
+#wheel .segment {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    transform-origin: 100% 100%;
+}
+#wheel .segment:nth-child(odd) {
+    background-color: #f1c40f;
+}
+#wheel .segment:nth-child(even) {
+    background-color: #e74c3c;
+}
+#spin {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
