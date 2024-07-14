@@ -1,5 +1,5 @@
 // script.js
-const actions = ['Boire 1 gorgée', 'Donner 2 gorgées', 'Boire 3 gorgées', 'Inventer une règle', 'Passer son tour', 'Choisir un joueur pour boire'];
+const actions = ['Oui', 'Non'];
 
 function createWheel() {
     const wheel = document.getElementById('wheel');
@@ -9,7 +9,7 @@ function createWheel() {
     for (let i = 0; i < numberOfSegments; i++) {
         const segment = document.createElement('div');
         segment.className = 'segment';
-        segment.style.transform = `rotate(${i * segmentAngle}deg) skewY(-${90 - segmentAngle}deg)`;
+        segment.style.transform = `rotate(${i * segmentAngle}deg)`;
         wheel.appendChild(segment);
     }
 }
